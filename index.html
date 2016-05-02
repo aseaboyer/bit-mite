@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>bit-mite</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <h1>bit-mite</h1>
+    <section id="gameWrapper">
+        <canvas id="game" height="200px" width="200px"></canvas>
+    </section>
+    <section id="UI">
+        <div id="dPad"></div>
+        <div id="healthWrapper">
+            <div id="healthBar"></div>
+        </div>
+        <div id="coins">
+            <span id="purse">0</span>
+            <strong>coin</strong>
+        </div>
+        <div id="killScreen">
+            <h3>You died!</h3>
+            <button id="restart">Restart</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p><a target="_blank" href="http://www.colourlovers.com/palette/2652343/*Neon-Palette*">Colors Credit</a></p>
+    </footer>
+    
+    <script src="js/Game.js"></script>
+    <script src="js/Keyring.js"></script>
+    <script src="js/Tile.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Coin.js"></script>
+    
+    <script src="js/run.js"></script>
+</body>
+</html>
