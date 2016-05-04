@@ -120,7 +120,8 @@ function Draw () {
     // check for enemy impacts with player
     for (var i = 0; i < game.enemies.length; i++) {
         if (game.enemies [i].position.x === player.position.x &&
-            game.enemies [i].position.y === player.position.y) {
+            game.enemies [i].position.y === player.position.y &&
+            game.enemies [i].spawning === false) {
                 player.changeHealth (-30);
         }
     }

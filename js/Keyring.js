@@ -7,20 +7,20 @@ function Keyring () {
         num: 0
     };
     
-    obj.press = function (k) {
-        if (k === 87) {
+    obj.press = function (k) {console.log (k);
+        if (k === 87 || k === 38) {
             this.current.pressed = true;
             this.current.state = "up";
             this.current.num = k;
-        } else if (k === 83) {
+        } else if (k === 83 || k === 40) {
             this.current.pressed = true;
             this.current.state = "down";
             this.current.num = k;
-        } else if (k === 65) {
+        } else if (k === 65 || k === 37) {
             this.current.pressed = true;
             this.current.state = "left";
             this.current.num = k;
-        } else if (k === 68) {
+        } else if (k === 68 || k === 39) {
             this.current.pressed = true;
             this.current.state = "right";
             this.current.num = k;
