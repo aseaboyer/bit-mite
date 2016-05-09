@@ -7,7 +7,7 @@ function Keyring () {
         num: 0
     };
     
-    obj.press = function (k) {console.log (k);
+    obj.press = function (k) {
         if (k === 87 || k === 38) {
             this.current.pressed = true;
             this.current.state = "up";
